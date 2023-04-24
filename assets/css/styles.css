@@ -6,7 +6,8 @@
     --primary-color: #1ebfc1;
 }
 
-html, body {
+html,
+body {
     scroll-behavior: smooth;
 }
 
@@ -31,6 +32,39 @@ a {
     text-decoration: none;
 }
 
+.btn {
+    display: inline-block;
+    padding: 0 16px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    min-width: 186px;
+    line-height: 68px;
+    text-align: center;
+    color: #ffffff;
+    background: #1ebfc1;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
+    border-radius: 14px;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
+.line-clamp.line-3 {
+    --line-clamp: 3;
+}
+
+.break-all {
+    word-break: break-all;
+}
+
 /* ==================== Header ==================== */
 .header.fixed {
     position: sticky;
@@ -42,6 +76,7 @@ a {
     display: flex;
     align-items: center;
     padding: 52px 0 8px;
+    background-color: #fff;
 }
 
 .header .nav {
@@ -106,4 +141,196 @@ a {
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
     border-radius: 6px;
+}
+
+/* ==================== Hero ==================== */
+.hero .body {
+    display: flex;
+    align-items: center;
+    padding: 42px 0 79px;
+}
+
+.hero .content {
+    width: 40%;
+}
+
+.hero .content .sub-title {
+    font-size: 1.4rem;
+    color: #767e7e;
+}
+
+.hero .content .title {
+    margin-top: 18px;
+    font-weight: 700;
+    font-size: 6.2rem;
+    line-height: 1.16;
+    color: #0d1111;
+}
+
+.hero .content .desc {
+    margin-top: 46px;
+    font-size: 1.8rem;
+    line-height: 1.78;
+    color: #9da6a5;
+}
+
+.hero .action {
+    margin-top: 52px;
+    display: flex;
+    align-items: center;
+}
+
+.hero .action .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.05);
+}
+
+.hero .stat {
+    position: relative;
+    margin-left: 136px;
+}
+
+.hero .stat .img {
+    width: 576px;
+    height: 631px;
+    object-fit: cover;
+    vertical-align: bottom;
+    background: #e0f7f6;
+}
+
+.hero .courses {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 149px;
+    left: -40px;
+    padding: 18px 25px;
+    background: #fefefd;
+    box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
+}
+
+.hero .courses .icon {
+    position: relative;
+}
+
+.hero .courses .icon::before {
+    position: absolute;
+    left: 50%;
+    bottom: 8px;
+    transform: translateX(-50%);
+    content: "";
+    display: inline-block;
+    width: 28px;
+    height: 4px;
+    background: #ffffff;
+    border-radius: 4px;
+}
+
+.hero .member .desc,
+.hero .schedules .desc,
+.hero .courses .desc {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #0d1111;
+}
+
+.hero .courses .desc {
+    width: 55px;
+    margin-left: 16px;
+}
+
+.hero .schedules {
+    position: absolute;
+    left: -65px;
+    bottom: 46px;
+    padding: 16px 25px 23px;
+    background: #ffffff;
+    box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.05);
+    border-radius: 24px;
+}
+
+.hero .schedules .desc {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero .progress-grp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.hero .progress {
+    position: relative;
+    display: inline-block;
+    width: 74px;
+    height: 6px;
+    background: #edf1f5;
+    border-radius: 3px;
+}
+
+.hero .progress + .progress {
+    margin-top: 10px;
+}
+
+.hero .progress:last-child {
+    width: 26px;
+    margin-top: 16px;
+}
+
+.hero .progress:not(:last-child)::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    display: inline-block;
+    width: var(--progress-width, 39px);
+    height: 6px;
+    background: #fb9899;
+    border-radius: 3px;
+}
+
+.hero .member {
+    position: absolute;
+    right: 45px;
+    bottom: 41px;
+    padding: 17px 35px;
+    background: #fefefd;
+    box-shadow: 0px 12px 80px rgba(0, 0, 0, 0.05);
+    border-radius: 24px;
+}
+
+.hero .member .avatar-grp {
+    display: flex;
+    margin-top: 8px;
+}
+
+.hero .member .avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33px;
+    height: 33px;
+    background-color: var(--bg-color, #fff);
+    object-fit: cover;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+.hero .member .avatar:not(:first-child) {
+    margin-left: -7px;
 }
