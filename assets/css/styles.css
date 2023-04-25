@@ -193,12 +193,12 @@ a {
     box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.05);
 }
 
-.hero .stat {
+.hero .info {
     position: relative;
     margin-left: 136px;
 }
 
-.hero .stat .img {
+.hero .info .img {
     width: 576px;
     height: 631px;
     object-fit: cover;
@@ -426,7 +426,7 @@ a {
 /* ==================== Courses ==================== */
 .courses {
     margin-top: 11px;
-    padding: 40px 0;
+    padding-top: 40px;
 }
 
 .courses .content .sub-title {
@@ -499,9 +499,9 @@ a {
 
 .courses .info {
     position: absolute;
+    top: 322px;
     left: 17px;
     right: 17px;
-    bottom: -71px;
     padding: 18px 25px 29px;
     background: #ffffff;
     box-shadow: 0px 16px 90px rgba(0, 0, 0, 0.05);
@@ -559,4 +559,35 @@ a {
     font-size: 1.4rem;
     line-height: 1.5;
     color: #9da6a5;
+}
+
+/* ==================== Stat ==================== */
+.stat {
+    padding: 40px 0;
+    margin-top: 349px;
+}
+
+.stat .row {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 862px;
+}
+
+.stat .column {
+    text-align: center;
+}
+
+.stat .heading {
+    font-weight: 700;
+    font-size: 6.2rem;
+    line-height: 1.5;
+    color: #0d1111;
+}
+
+.stat .desc {
+    margin-top: 11px;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #767e7e;
 }
