@@ -422,3 +422,141 @@ a {
     line-height: 1.69;
     color: #9da6a5;
 }
+
+/* ==================== Courses ==================== */
+.courses {
+    margin-top: 11px;
+    padding: 40px 0;
+}
+
+.courses .content .sub-title {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #767e7e;
+}
+
+.courses .content .heading {
+    margin-top: 18px;
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: 1.33;
+    color: #0d1111;
+}
+
+.courses .content .foot {
+    display: flex;
+    margin-top: 19px;
+    justify-content: space-between;
+}
+
+.courses .content .foot .desc {
+    width: 525px;
+    font-size: 1.8rem;
+    line-height: 1.78;
+    color: #767e7e;
+}
+
+.courses .content .foot .view-btn {
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-decoration-line: underline;
+    color: #1ebfc1;
+}
+
+.courses .row {
+    margin-top: 79px;
+    display: flex;
+    gap: 47px;
+}
+
+.courses .column {
+    position: relative;
+    width: calc(100% / 3);
+}
+
+.courses .column .img {
+    display: block;
+    position: relative;
+}
+
+.courses .column .img::before {
+    position: absolute;
+    inset: 0;
+    content: "";
+    display: inline-block;
+    background: #d0efed;
+    opacity: 0.35;
+    border-radius: 8px;
+}
+
+.courses .column img {
+    width: 100%;
+    height: 393px;
+    object-fit: cover;
+    border-radius: 8px;
+    vertical-align: bottom;
+}
+
+.courses .info {
+    position: absolute;
+    left: 17px;
+    right: 17px;
+    bottom: -71px;
+    padding: 18px 25px 29px;
+    background: #ffffff;
+    box-shadow: 0px 16px 90px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+.courses .info .title a {
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 1.5;
+    color: #0d1111;
+}
+
+.courses .info .fee {
+    margin-top: 16px;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #767e7e;
+}
+
+.courses .info .fee strong {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #0d1111;
+}
+
+.courses .info .desc {
+    margin-top: 6px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #9da6a5;
+}
+
+.courses .info .foot {
+    display: flex;
+    gap: 0 10px;
+    margin-top: 18px;
+}
+
+.courses .item {
+    display: flex;
+    align-items: center;
+}
+
+.courses .item .dot {
+    display: inline-block;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    background: #1ebfc1;
+}
+
+.courses .item .text {
+    margin-left: 10px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #9da6a5;
+}
