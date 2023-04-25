@@ -164,10 +164,15 @@ a {
 }
 
 .hero .content .desc {
+    width: 374px;
     margin-top: 46px;
     font-size: 1.8rem;
     line-height: 1.78;
     color: #9da6a5;
+}
+
+.hero .content .desc span {
+    display: inline-block;
 }
 
 .hero .action {
