@@ -61,10 +61,6 @@ a {
     --line-clamp: 3;
 }
 
-.break-all {
-    word-break: break-all;
-}
-
 /* ==================== Header ==================== */
 .header.fixed {
     position: sticky;
@@ -333,4 +329,91 @@ a {
 
 .hero .member .avatar:not(:first-child) {
     margin-left: -7px;
+}
+
+/* ==================== Features ==================== */
+.features {
+    margin-top: 51px;
+    padding: 79px 0;
+}
+
+.features .content {
+    width: 591px;
+}
+
+.features .content .sub-title {
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #767e7e;
+}
+
+.features .content .heading {
+    margin-top: 18px;
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: 1.33;
+    color: #0d1111;
+}
+
+.features .content .desc {
+    margin-top: 18px;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #767e7e;
+}
+
+.features .row {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    width: 1024px;
+}
+
+.features .column .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 102px;
+    height: 106px;
+    border-radius: 18px;
+}
+
+.features .column:first-child {
+    width: 168px;
+}
+
+.features .column:first-child .icon {
+    background: #ffc147;
+}
+
+.features .column:nth-child(2) {
+    width: 223px;
+}
+
+.features .column:nth-child(2) .icon {
+    background: #ff947a;
+}
+
+.features .column:last-child {
+    width: 224px;
+}
+
+.features .column:last-child .icon {
+    background: #bf83ff;
+}
+
+.features .column .title {
+    margin-top: 26px;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #0d1111;
+}
+
+.features .column .desc {
+    margin-top: 16px;
+    font-size: 1.6rem;
+    line-height: 1.69;
+    color: #9da6a5;
 }
