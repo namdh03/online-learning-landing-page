@@ -66,13 +66,13 @@ a {
     position: sticky;
     top: -44px;
     z-index: 1;
+    background-color: #fff;
 }
 
 .header .body {
     display: flex;
     align-items: center;
     padding: 52px 0 8px;
-    background-color: #fff;
 }
 
 .header .nav {
@@ -714,4 +714,86 @@ a {
 
 .cta .cta-btn {
     margin-left: 410px;
+}
+
+/* ==================== Footer ==================== */
+.footer {
+    margin-top: 81px;
+    padding: 50px 0;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .column .heading {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #2e2e2e;
+}
+
+.footer .column .item a {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #535353;
+}
+
+/* Column 2 */
+.footer .column:nth-child(2) .list {
+    margin-top: 25px;
+}
+
+.footer .column:nth-child(2) .item + .item {
+    margin-top: 20px;
+}
+
+/* Column 3 */
+.footer .column:nth-child(3) .list {
+    margin-top: 26px;
+}
+
+.footer .column:nth-child(3) .item + .item {
+    margin-top: 21px;
+}
+
+/* Column 4 */
+.footer .column:nth-child(4) .list {
+    margin-top: 26px;
+}
+
+.footer .column:nth-child(4) .item + .item {
+    margin-top: 18px;
+}
+
+/* Column 5 */
+.footer .column:last-child .item + .item,
+.footer .column:last-child .list {
+    margin-top: 18px;
+}
+
+.footer .column:last-child .item a {
+    display: flex;
+    align-items: center;
+}
+
+.footer .column:last-child .icon span:first-child {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    margin-right: 9px;
+}
+
+.footer .copyright {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.footer .copyright p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #b0b5b4;
 }
