@@ -111,9 +111,12 @@ a {
 }
 
 .header .cta-btn {
+    --height: 48px;
+    min-width: 108px;
+    height: var(--height);
+    line-height: var(--height);
     display: inline-block;
     text-align: center;
-    padding: 12px 24px;
     font-size: 1.6rem;
     color: #494949;
 }
@@ -671,9 +674,9 @@ a {
 
 .feedback .images {
     position: relative;
-    width: 58%;
+    width: 679px;
     height: 481px;
-    margin-left: 70px;
+    margin-left: auto;
 }
 
 .feedback .images img {
